@@ -1,0 +1,31 @@
+{
+    "name": "keithbrink/walmart-marketplace-laravel-sdk",
+    "description": "Connect to the Walmart Marketplace API using Laravel",
+    "keywords": ["laravel", "walmart", "seller", "marketplace"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Keith Brink",
+            "email": "keith.brink@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "KeithBrink\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "KeithBrink\\Walmart\\WalmartServiceProvider"
+            ],
+            "aliases": {
+                "WalmartMkt": "KeithBrink\\Walmart\\WalmartFacade"
+            }
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "nesbot/carbon": "^1.19"
+    }
+}
