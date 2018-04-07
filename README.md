@@ -9,7 +9,7 @@ This version supports Laravel 5.5. It may work with other versions but has not y
 To get the latest version, simply require the project using [Composer](https://getcomposer.org):
 
 ```bash
-$ composer require keithbrink/walmart-laravel-sdk
+$ composer require keithbrink/walmart-marketplace-laravel-sdk
 ```
 
 On Laravel 5.5, the `KeithBrink\Walmart\WalmartServiceProvider` service provider and `KeithBrink\Walmart\WalmartFacade` facade will be automatically discovered so it will not need to be added to your config. On previous versions (untested), you will need to add those manually to your `config/app.php`.
